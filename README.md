@@ -56,14 +56,9 @@ n | \alpha_{n-1} | a_{n-1} | d_{n} | q_{n}
 7 | 0 | 0 | 0.303 | 0
 
 
-Here's | A | Snappy | Table
---- | --- | --- | ---
-1 | `highlight` | **bold** | 7.41
-2 | a | b | c
-3 | *italic* | text | 403
-4 | 2 | 3 | abcd
 
-** individual transformation matrices about each joint **
+**individual transformation matrices about each joint**
+
 ```python
         T0_1 = Matrix([[            cos(q1),            -sin(q1),            0,              a0],
                        [sin(q1)*cos(alpha0), cos(q1)*cos(alpha0), -sin(alpha0), -sin(alpha0)*d1],
@@ -109,7 +104,8 @@ Here's | A | Snappy | Table
 
 ```
 
-** generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose **
+**generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose**
+
 ```python
 	T0_EE = T0_1 * T1_2 * T2_3 * T3_4 * T4_5 * T5_6 * T6_EE
 ```
@@ -168,7 +164,7 @@ Here's | A | Snappy | Table
 ```
 
 
-** Inverse Orientation Kinematics **
+**Inverse Orientation Kinematics**
 
 ```python
    # total rotation matrix
