@@ -44,8 +44,9 @@ Here is an image from the lessons showing the parameters used for creating the D
 #### 2. Using the DH parameter table you derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose.
 
 ** DH Parameters Table **
+
 n | \alpha_{n-1} | a_{n-1} | d_{n} | q_{n}
---- | --- | --- | --- | --- |
+--- | --- | --- | --- | --- 
 1 | 0 | 0 | 0.75 | q1
 2 | -pi/2 | 0.35 | 0 | q2-pi/2
 3 | 0 | 1.25 | 0 | q3
