@@ -173,6 +173,7 @@ n | \alpha_{n-1} | a_{n-1} | d_{n} | q_{n}
    # rotation matrix for last 3 joints (spherical wrist) control rotation of EE
    R3_6 = R0_3.T * R0_6
    # reference: http://docs.ros.org/hydro/api/hrl_geom/html/namespacehrl__geom_1_1transformations.html#a8ca9b0bdcd7c401ef619c1a644b3203f
+   # reference: https://udacity-robotics.slack.com 
    (theta4, theta5, theta6) = tf.transformations.euler_from_matrix(np.array(R3_6_eval).astype(np.float64), axes = 'ryzx')
    theta5 = theta5 - pi/2
    theta6 = theta6 - pi/2

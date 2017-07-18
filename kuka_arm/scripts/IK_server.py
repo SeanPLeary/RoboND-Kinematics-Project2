@@ -210,6 +210,7 @@ def handle_calculate_IK(req):
             R3_6_eval = R3_6.evalf(subs={r: roll, p: pitch, y: yaw, q1: theta1, q2: theta2, q3: theta3})
             
             # reference: http://docs.ros.org/hydro/api/hrl_geom/html/namespacehrl__geom_1_1transformations.html#a8ca9b0bdcd7c401ef619c1a644b3203f
+            # reference: https://udacity-robotics.slack.com            
             (theta4, theta5, theta6) = tf.transformations.euler_from_matrix(np.array(R3_6_eval).astype(np.float64), axes = 'ryzx')
 
             theta5 = theta5 - pi/2
