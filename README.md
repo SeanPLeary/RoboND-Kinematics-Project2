@@ -113,7 +113,7 @@ n | \alpha_{n-1} | a_{n-1} | d_{n} | q_{n}
 #### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.
 
 
-** Inverse Position Kinematics **
+**Inverse Position Kinematics**
 
 
 ![alt text][image2]
